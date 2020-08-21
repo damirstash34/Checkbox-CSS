@@ -1,0 +1,32 @@
+input[type="checkbox"]
+{
+  position: absolute;
+  -webkit-appearance: none;
+  background: #807d7d;
+  width: 40px;
+  height: 18px;
+  outline: none;
+  border-radius: 13px;
+  transition: .6s;
+  cursor: pointer;
+  user-select: none;
+}
+input:checked[type="checkbox"]
+{
+  background: #0ecaf5;
+}
+input[type="checkbox"]::before
+{
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 0px;
+  top: -1px;
+  transition: .3s;
+}
+input:checked[type="checkbox"]::before {
+  left: 20px;
+}
